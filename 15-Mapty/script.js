@@ -114,7 +114,6 @@ class App {
 
     const coords = [latitude, longitude];
 
-
     this.#map = L.map('map').setView(coords, this.#mapZoomLvl);
     // console.log(map);
 
@@ -182,7 +181,6 @@ class App {
         !validInputs(distance, duration, cadence) ||
         !allPositive(distance, duration, cadence)
       ) {
-    
         return;
       }
 
@@ -197,7 +195,6 @@ class App {
         !validInputs(distance, duration, elevation) ||
         !allPositive(distance, duration)
       ) {
-     
         return;
       }
 
